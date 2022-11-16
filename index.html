@@ -1,78 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="./main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <title>Pokémon Trivia</title>
-</head>
-<body>
-    <section class="heading">
-        <h1>Pokémon Trivia</h1>
-        <h2 class="total">Total Score: 0</h2>
+  </head>
+  <body>
+    <section class="header">
+      <h1 class="title">Pokémon Trivia</h1>
+      <h2 class="score">Score: 0</h2>
     </section>
-    <div class="main-game"></div>
-    <div class="game-container">
-        
-        <div id="game-body">
-            <div class="category">
-                <p class="genre">NUMBERS GAME</p>
-                <p class="genre">TYPES</p>
-                <p class="genre">GAME TIME</p>
-                <p class="genre">EEVEE-LUTIONS</p>
-                <p class="genre">CHAMPIONS</p>
-                <p class="genre">ANIME</p>
-            </div>
-            <div class="column1 column">
-                <p class="card">200</p>
-                <p class="card">400</p>
-                <p class="card">600</p>
-                <p class="card">800</p>
-                <p class="card">1000</p>
-            </div>
-            <div class="column2 column">
-                <p class="card">200</p>
-                <p class="card">400</p>
-                <p class="card">600</p>
-                <p class="card">800</p>
-                <p class="card">1000</p>
-            </div>
-            <div class="column3 column">
-                <p class="card">200</p>
-                <p class="card">400</p>
-                <p class="card">600</p>
-                <p class="card">800</p>
-                <p class="card">1000</p>
-            </div>
-            <div class="column4 column">
-                <p class="card">200</p>
-                <p class="card">400</p>
-                <p class="card">600</p>
-                <p class="card">800</p>
-                <p class="card">1000</p>
-            </div>
-            <div class="column5 column">
-                <p class="card">200</p>
-                <p class="card">400</p>
-                <p class="card">600</p>
-                <p class="card">800</p>
-                <p class="card">1000</p>
-            </div>
-            <div class="column6 column">
-                <p class="card">200</p>
-                <p class="card">400</p>
-                <p class="card">600</p>
-                <p class="card">800</p>
-                <p class="card">1000</p>
-            </div>
-        </div>
-        <div class="modal-container">
-            <div id="modal">
-                <div class="modal-guts"></div>
-            </div>
-        </div>
+    <div class="game"></div>
+    <div class="modal-container hidden">
+      <div id="modal">
+        <div class="modal-guts"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
