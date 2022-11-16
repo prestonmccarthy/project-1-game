@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    color: white;
+    color: black;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -13,4 +13,58 @@ body{
   section {
     display: inline;
   }
-  
+
+  .game {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: white;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: white;
+  }
+
+  .card {
+    width: 140px;
+    height: 85px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+    margin: 5px;
+    padding: 10px;
+    line-height: 80px;
+    border: solid red 10px;
+}
+
+.title-title {
+    background-color: red;
+    font-weight: bolder;
+    text-align: center;
+    margin: 5px;
+}
+
+.choice-one {
+    background-color: whitesmoke;
+}
+
+.choice-two {
+    background-color: whitesmoke;
+}
+
+.choice-three {
+    background-color: whitesmoke;
+}
+
+.choice-four {
+    background-color: whitesmoke;
+}
