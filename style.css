@@ -9,6 +9,8 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100wh;
+    background: black;
+    animation: mymove 5s infinite;
   }
 
   section {
@@ -50,7 +52,7 @@ body{
 }
 
 .card:hover {
-    border: solid blue 10px;
+    border: solid gold 10px;
 }
 
 .title-title {
@@ -62,35 +64,52 @@ body{
 
 button {
     display: grid;
-    grid-template-columns: 140px 1fr;
     justify-content: center;
     margin: 5%;
     background-color: whitesmoke;
     font-size: 26px;
 }
 
+button:hover {
+    background-color: blanchedalmond;
+}
+
+.card-text {
+    grid-column: 1 / span 3;
+    text-align: center;
+    font-size: 26px;
+}
+
 .option-one {
     background-color: whitesmoke;
     border-radius: 5px;
+    width: 200px;
     grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
 }
 
 .option-two {
   background-color: whitesmoke;
   border-radius: 5px;
+  width: 200px;
   grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .option-three {
   background-color: whitesmoke;
   border-radius: 5px;
+  width: 200px;
   grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .option-four {
   background-color: whitesmoke;
   border-radius: 5px;
+  width: 200px;
   grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .modal-container {
@@ -104,7 +123,8 @@ button {
 }
 
 .modal-inside {
-    display: grid;
+    display: inline-grid;
+    column-gap: 5px;
     align-items: center;
     text-align: center;
     color: white;
@@ -117,7 +137,7 @@ button {
     border-radius: 5px;
     justify-content: center;
     margin: 200px 200px 200px 200px;
-    width: 800px;
+    max-width: 800px;
     align-items: center;
 }
 
@@ -125,3 +145,21 @@ button {
     opacity: 0;
     display: none;
 }
+
+@keyframes mymove {
+    0% {
+      background: black;
+    }
+    25% {
+      background: blue;
+    }
+    50% {
+      background: black;
+    }
+    75% {
+      background: blue;
+    }
+    100% {
+      background: black;
+    }
+  }
