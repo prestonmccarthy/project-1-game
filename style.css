@@ -21,6 +21,8 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin: 0 auto;
+    gap: 10px;
     max-width: 100%;
     max-height: 100%;
   }
@@ -36,7 +38,7 @@ body{
   }
 
   .card {
-    width: 140px;
+    max-width: 200px;
     height: 85px;
     background-color: whitesmoke;
     text-align: center;
@@ -47,6 +49,10 @@ body{
     border: solid red 10px;
 }
 
+.card:hover {
+    border: solid blue 10px;
+}
+
 .title-title {
     background-color: red;
     font-weight: bolder;
@@ -54,20 +60,37 @@ body{
     margin: 5px;
 }
 
-.choice-one {
+button {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    justify-content: center;
+    margin: 5%;
     background-color: whitesmoke;
+    font-size: 26px;
 }
 
-.choice-two {
+.option-one {
     background-color: whitesmoke;
+    border-radius: 5px;
+    grid-column: 1 / span 1;
 }
 
-.choice-three {
-    background-color: whitesmoke;
+.option-two {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  grid-column: 3 / span 1;
 }
 
-.choice-four {
-    background-color: whitesmoke;
+.option-three {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  grid-column: 1 / span 1;
+}
+
+.option-four {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  grid-column: 3 / span 1;
 }
 
 .modal-container {
@@ -84,6 +107,7 @@ body{
     display: grid;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 #modal {
@@ -93,7 +117,7 @@ body{
     border-radius: 5px;
     justify-content: center;
     margin: 200px 200px 200px 200px;
-    width: 725px;
+    width: 800px;
     align-items: center;
 }
 
