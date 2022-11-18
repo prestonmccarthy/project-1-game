@@ -22,3 +22,6 @@ All questions answered
     -> else if score is less than 0
         -> Player is told the world of Pokemon might not be right for them
 Refresh page to start game over
+
+
+
