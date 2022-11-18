@@ -41,6 +41,7 @@ Project Presentation:
 
 
 FAVORITE FUNCTION: 
+//
 function getAnswer() {
     const allCards = Array.from(document.querySelectorAll(".card"));
     allCards.forEach((card) => {
