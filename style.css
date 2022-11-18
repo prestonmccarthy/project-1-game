@@ -52,7 +52,9 @@ body{
 }
 
 .card:hover {
-    border: solid gold 10px;
+    border-image: linear-gradient(red, blue) 30;
+    border-width: 10px;
+    border-style: solid;
 }
 
 .title-title {

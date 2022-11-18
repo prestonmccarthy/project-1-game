@@ -41,8 +41,7 @@ Project Presentation:
 
 
 FAVORITE FUNCTION: 
-//
-function getAnswer() {
+// function getAnswer() {
     const allCards = Array.from(document.querySelectorAll(".card"));
     allCards.forEach((card) => {
       if (card.innerText !== "") {
