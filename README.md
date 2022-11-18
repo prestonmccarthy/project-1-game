@@ -4,8 +4,7 @@ Game Title - Pokémon Trivia
     Background Info: Pokémon has always been a huge part of my life and I was so excited to get an opportunity to incorporate my knowledge of the game/show into a functional trivia-style game.
     -When making this game, I struggled with whether I wanted to create my elements in JS or HTML and style from there, so I went back and forth a few times before I finally landed on JS as my primary element creation method. 
 
-Screenshots - Located in Assets Folder
-
+Screenshots:
 ![Alt text](assets/1.%20Trivia%20Wireframe.png)
 ![Alt text](assets/2.%20Game%20Start.png)
 ![Alt text](assets/3.%20Hover%20Over%20Card.png)
