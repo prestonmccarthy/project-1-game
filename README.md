@@ -6,6 +6,13 @@ Game Title - Pokémon Trivia
 
 Screenshots - Located in Assets Folder
 
+![Alt text](assets/1.%20Trivia%20Wireframe.png)
+![Alt text](assets/2.%20Game%20Start.png)
+![Alt text](assets/3.%20Hover%20Over%20Card.png)
+![Alt text](assets/4.%20Question%20Appears%20and%20Numbers%20Disappear%20from%20Card.png)
+![Alt text](assets/5.%20Final%20Question%20Answered%20with%20Alert.png)
+![Alt text](assets/6.%20Post%20Game.png)
+
 Technologies Used - JavaScript, HTML, CSS
 
 Getting Started:
