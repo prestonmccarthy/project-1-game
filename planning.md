@@ -33,6 +33,7 @@ Project Presentation:
 3. Show/Discuss Code:
     - Briefly show HTML/CSS
     - Show JS and discuss favorite function.
+        function getAnswer() - is my favorite. 
 4. Share the experience:
     - What was my biggest challenge?
     - What are the key learnings/takeaways?

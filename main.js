@@ -1,4 +1,3 @@
-console.log("loaded")
 // --------------------------Global Objects Defined--------------------------
 
 const game = document.querySelector(".game");
@@ -221,8 +220,6 @@ const triviaCategories = [
   },
 ];
 
-console.log(triviaCategories)
-
 // --------------------------Global Objects Defined--------------------------
 
 // ----------Function to remove modal after question is answered-------------
@@ -278,8 +275,6 @@ function showQuestion(event) {
     myCards.forEach((card) => card.removeEventListener("click", showQuestion));
     event.target.children.length = 0;
 }
-
-console.log(showQuestion)
   
 function addTitle(genre) {
   const column = document.createElement("div");
@@ -309,8 +304,6 @@ function addTitle(genre) {
 }
 
 triviaCategories.forEach((genre) => addTitle(genre));
-
-console.log(addTitle)
 
 // --------------------------Select and Display Question Functions--------------------------
 
@@ -364,7 +357,5 @@ function getAnswer() {
       }
     }
   }
-
-  console.log(getAnswer)
 
 // -------------Select Answer and Add or Subtract Score with Final Score Alerts-------------
