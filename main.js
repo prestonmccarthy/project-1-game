@@ -227,8 +227,8 @@ console.log(triviaCategories)
 
 // ----------Function to remove modal after question is answered-------------
 
-function toggleModal() {
-  modalContainer.classList.add("hidden");
+function removeModal() {
+  modalContainer.classList.add("invisible");
 }
 
 // ----------Function to remove modal after question is answered-------------
@@ -263,16 +263,16 @@ function showQuestion(event) {
     optionThree.addEventListener("click", getAnswer);
     optionFour.addEventListener("click", getAnswer);
   
-    optionOne.addEventListener("click", toggleModal);
-    optionTwo.addEventListener("click", toggleModal);
-    optionThree.addEventListener("click", toggleModal);
-    optionFour.addEventListener("click", toggleModal);
+    optionOne.addEventListener("click", removeModal);
+    optionTwo.addEventListener("click", removeModal);
+    optionThree.addEventListener("click", removeModal);
+    optionFour.addEventListener("click", removeModal);
   
     modalInside.innerText = "";
     modalInside.dataset.correct = this.getAttribute("data-correct");
     modalInside.dataset.value = this.getAttribute("data-value");
     modalInside.append(questionDisplay, optionOne, optionTwo, optionThree, optionFour);
-    modalContainer.classList.remove("hidden");
+    modalContainer.classList.remove("invisible");
   
     const myCards = Array.from(document.querySelectorAll(".card"));
     myCards.forEach((card) => card.removeEventListener("click", showQuestion));
