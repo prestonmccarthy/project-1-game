@@ -4,9 +4,9 @@ Choice of Game: Trivia (Pokemon Trivia)
 
 Pseudocode:
 Mouse over question 
-    -> question expands
+    -> question border changes color to indicate which question you're about to select.
 when clicked
-    -> question appears
+    -> question and multiple choice answers appear
 User clicks answer (1 of 4)
     -> if correct
         -> add points to total score
