@@ -17,17 +17,6 @@ body{
     display: block;
   }
 
-  .game {
-    display: flex;
-    background-color: whitesmoke;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
   h1 {
     font-size: 50px;
     color: white;
@@ -38,12 +27,28 @@ body{
     color: white;
   }
 
+  .game {
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .title-title {
+    background-color: red;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 5px;
+    width: 165px;
+}
+
   .card {
     max-width: 200px;
     height: 85px;
     background-color: whitesmoke;
     border-radius: 5px;
-    text-align: center;
     font-size: 50px;
     margin: 5px;
     padding: 10px;
@@ -55,15 +60,6 @@ body{
     border-image: linear-gradient(red, blue) 30;
     border-width: 10px;
     border-style: solid;
-}
-
-.title-title {
-    background-color: red;
-    font-weight: bolder;
-    text-align: center;
-    border-radius: 5px;
-    margin: 5px;
-    width: 165px;
 }
 
 button {
@@ -167,4 +163,3 @@ button:hover {
       background: black;
     }
   }
-  

@@ -3,8 +3,8 @@
 const game = document.querySelector(".game");
 const scoreTotal = document.querySelector(".score");
 let score = 0;
-let modalContainer = document.querySelector(".modal-container");
-let modalInside = document.querySelector(".modal-inside");
+let modalContainer = document.querySelector(".modal-container"); // creates element for questions to go into
+let modalInside = document.querySelector(".modal-inside"); // creates element for interior of card with question
 let attempts = 30; 
 
 const triviaCategories = [
@@ -339,21 +339,14 @@ function getAnswer() {
   
     if (attempts === 0) {
       if (score < 0) {
-        alert(
-          ">.< Do you even know what a Pokémon is? Refresh the page to try again. >.<"
-        );
+        scoreTotal.innerText = ">.< Do you even know what a Pokémon is? Refresh the page to try again. >.<";
+        scoreTotal.style.color = "whitesmoke";
       } else if (score < 5000) {
-        alert(
-          ">.< Keep training, you're not quite ready to face the Pokemon League. Refresh the page to try again. >.<"
-        );
+        scoreTotal.innerText = ">.< Keep training, you're not quite ready to face the Pokemon League. Refresh the page to try again. >.<";
       } else if (score < 10000) {
-        alert(
-          "^.^ Great work, but you still have a little work to do if you want to become Champion! Refresh the page to try again. ^.^"
-        );
+        scoreTotal.innerText = "^.^ Great work, but you still have a little work to do if you want to become Champion! Refresh the page to try again. ^.^";
       } else {
-        alert(
-          "^.^ WOW! You could be the next Pokémon League Champion! Refresh the page to play again. ^.^"
-        );
+        scoreTotal.innerText = "^.^ WOW! You could be the next Pokémon League Champion! Refresh the page to play again. ^.^";
       }
     }
   }
