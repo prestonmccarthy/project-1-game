@@ -340,19 +340,19 @@ function getAnswer() {
     if (attempts === 0) {
       if (score < 0) {
         alert(
-          "The world of Pokemon might not be right for you."
+          ">.< Do you even know what a Pokémon is? Refresh the page to try again. >.<"
         );
       } else if (score < 5000) {
         alert(
-          "Keep training, you're not quite ready to face the Pokemon League."
+          ">.< Keep training, you're not quite ready to face the Pokemon League. Refresh the page to try again. >.<"
         );
       } else if (score < 10000) {
         alert(
-          "Great work, but you still have a little work to do if you want to become Champion!"
+          "^.^ Great work, but you still have a little work to do if you want to become Champion! Refresh the page to try again. ^.^"
         );
       } else {
         alert(
-          "Congratulations! You're the new Pokémon League Champion!"
+          "^.^ WOW! You could be the next Pokémon League Champion! Refresh the page to play again. ^.^"
         );
       }
     }

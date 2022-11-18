@@ -38,3 +38,61 @@ Project Presentation:
     - What was my biggest challenge?
     - What are the key learnings/takeaways?
 5. Q & A - Feedback
+
+
+FAVORITE FUNCTION: 
+function getAnswer() {
+    const allCards = Array.from(document.querySelectorAll(".card"));
+    allCards.forEach((card) => {
+      if (card.innerText !== "") {
+        card.addEventListener("click", showQuestion);
+      } else {
+        card.classList.add("emptyCard");
+      }
+    });
+
+    // ^^ Displays Questions once card is clicked, and also displays empty card when question has been answered. ^^
+  
+    const cardOfButton = modalInside;
+
+    if (cardOfButton.getAttribute("data-correct") === this.innerText) {
+      score = score + parseInt(cardOfButton.getAttribute("data-value"));
+      if (score < 0) {
+        scoreTotal.style.color = "red";
+      } else {
+        scoreTotal.style.color = "whitesmoke";
+      }
+      scoreTotal.innerText = `Score: ${score}`;
+    } else if (cardOfButton.getAttribute("data-correct") != this.innerText) {
+      score = score - parseInt(cardOfButton.getAttribute("data-value"));
+      if (score < 0) {
+        scoreTotal.style.color = "red";
+      }
+      scoreTotal.innerText = `Score: ${score}`;
+    }
+    cardOfButton.removeEventListener("click", showQuestion);
+
+    // ^^ Adds or Subtracts from Score depending on Right/Wrong answer given. If score falls below 0, score color will change to red to indicate negative current score. ^^
+  
+    if (attempts === 0) {
+      if (score < 0) {
+        alert(
+          "The world of Pokemon might not be right for you."
+        );
+      } else if (score < 5000) {
+        alert(
+          "Keep training, you're not quite ready to face the Pokemon League."
+        );
+      } else if (score < 10000) {
+        alert(
+          "Great work, but you still have a little work to do if you want to become Champion!"
+        );
+      } else {
+        alert(
+          "Congratulations! You're the new Pokémon League Champion!"
+        );
+      }
+    }
+  }
+
+    // ^^ Alerts User on Whether they did well or if they need to study up on their Pokémon knowledge. ^^
