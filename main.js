@@ -160,7 +160,7 @@ const triviaCategories = [
       },
       {
         question: `In which game(s) does the Pokémon League Champion specialize in Steel-type Pokémon?`,
-        choices: ["Red/Blue", "Ruby/Sapphire", "Diamon/Pearl", "Black/White"],
+        choices: ["Red/Blue", "Ruby/Sapphire", "Diamond/Pearl", "Black/White"],
         correct: "Ruby/Sapphire",
         points: 400,
       },
