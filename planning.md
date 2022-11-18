@@ -24,4 +24,16 @@ All questions answered
 Refresh page to start game over
 
 
-
+Project Presentation:
+1. Introduce Project:
+    - Paraphrase the above
+2. Demonstrate Project:
+    - Launch Game by clicking Link in README
+    - Play the game! If necessary, manipulate the values of variables in the console to ensure a quick win or loss.
+3. Show/Discuss Code:
+    - Briefly show HTML/CSS
+    - Show JS and discuss favorite function.
+4. Share the experience:
+    - What was my biggest challenge?
+    - What are the key learnings/takeaways?
+5. Q & A - Feedback
